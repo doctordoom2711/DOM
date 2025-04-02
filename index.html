@@ -101,5 +101,51 @@
     }
   </script>
 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+    <style>
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainHeading">DOM Manipulation Example</h1>
+        <button id="actionButton" onclick="Dom()">Click Me!</button>
+        <div id="outputArea" class="output">
+            <p id="Text">Button not clicked yet</p>
+        </div>
+    </div>
+
+
+    <script>
+      function Dom() {
+      document.getElementById("Text").innerHTML = "You have Clicked the button!";
+      }
+      
+    
+    </script>
+
 </body>
 </html>
